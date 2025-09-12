@@ -26,7 +26,7 @@ This portfolio website serves as a comprehensive showcase of my professional jou
 
 - **Responsive Design**: Fully responsive layout that works seamlessly across all devices
 - **Modern UI/UX**: Clean and professional design with smooth animations
-- **Interactive Sections**: 
+- **Interactive Sections**:
   - About Me with professional summary
   - Work Experience timeline
   - Featured Projects with live demos and GitHub links
@@ -50,26 +50,31 @@ This portfolio website serves as a comprehensive showcase of my professional jou
 The portfolio highlights several key projects:
 
 ### 1. AI Voice Agent Interview Platform
+
 - **Tech Stack**: Next.js, React, Node.js, TypeScript, VAPI, OpenAI API
 - **Key Features**: Real-time AI-powered voice assistant with >95% transcription accuracy
 - **Impact**: 40% reduction in page load time, <300ms response time
 
 ### 2. Money-Tracker Website
+
 - **Tech Stack**: MongoDB, Express.js, React, Node.js (MERN)
 - **Key Features**: Full-stack expense tracker supporting 100+ concurrent users
 - **Impact**: 70% reduction in manual tracking effort, 35% faster backend response
 
 ### 3. Advanced Modular Python Calculator
+
 - **Tech Stack**: Python, Pandas, Pylint, PyTest
 - **Key Features**: CLI-based calculator with 20+ operations and design patterns
 - **Impact**: 90%+ test coverage, 70% reduction in runtime crashes
 
 ### 4. E-Commerce Sales Analysis
+
 - **Tech Stack**: Power BI, Excel, SQL
 - **Key Features**: Analysis of $14.1M YTD sales data with interactive dashboards
 - **Impact**: 40% improvement in decision-making efficiency
 
 ### 5. HR Analytics Dashboard
+
 - **Tech Stack**: Tableau, Power BI, Excel, SQL
 - **Key Features**: Interactive dashboard analyzing 5 years of workforce data
 - **Impact**: 12% reduction in attrition, 40% reduction in manual reporting
@@ -77,17 +82,20 @@ The portfolio highlights several key projects:
 ## 🔧 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/ShriyaSharma1122334455/Porfolio.git
    cd Porfolio
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -100,42 +108,45 @@ The portfolio highlights several key projects:
 ## 💻 Usage
 
 ### Development Mode
+
 Run the project in development mode with hot reloading:
+
 ```bash
 npm start
 ```
+
 The application will open at `http://localhost:3000`
 
 ### Production Build
+
 Create an optimized production build:
+
 ```bash
 npm run build
 ```
 
 ### Deployment
+
 The project is configured for GitHub Pages deployment. Push changes to the main branch to automatically deploy updates.
 
 ## 📁 Project Structure
 
 ```
-Porfolio/
-├── public/
-│   ├── index.html
-│   ├── favicon.ico
+SHRIYA-SHARMA's-Porfolio/
+├── Asserts/
+│   ├── icons/
+|   |   ├──python.png
+    │   ├──java.png
+    │    └──......
+│   ├── ECom.png
 │   └── ...
-├── src/
-│   ├── components/
-│   │   ├── About/
-│   │   ├── Experience/
-│   │   ├── Projects/
-│   │   ├── Skills/
-│   │   ├── Contact/
+├── components/
+│   │   ├── Projects.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Contact.tsx
 │   │   └── ...
-│   ├── assets/
-│   │   ├── images/
-│   │   ├── icons/
-│   │   └── documents/
-│   ├── styles/
+│   │
+│   ├── hooks/useScrollAnimation.ts
 │   ├── App.js
 │   ├── App.css
 │   └── index.js
@@ -148,18 +159,22 @@ Porfolio/
 ## 🎨 Customization
 
 ### Adding New Projects
+
 1. Update the projects data in the appropriate component
 2. Add project images to the assets folder
 3. Include GitHub links and live demo URLs
 4. Update the projects showcase section
 
 ### Modifying Styles
+
 The project uses Tailwind CSS for styling. Customize the design by:
+
 - Modifying `tailwind.config.js` for theme customization
 - Updating component-specific classes
 - Adding custom CSS in component files
 
 ### Updating Content
+
 - Personal information: Update in the About component
 - Work experience: Modify the Experience component
 - Skills: Update the Skills component data
@@ -178,6 +193,7 @@ While this is a personal portfolio, I welcome suggestions and feedback! If you n
 ## 📧 Contact
 
 **Shriya Sharma**
+
 - Email: shriyasharma2152@hotmail.com
 - Portfolio: [Live Website](https://shriyasharma1122334455.github.io/Porfolio/)
 - GitHub: [@ShriyaSharma1122334455](https://github.com/ShriyaSharma1122334455)
@@ -188,4 +204,4 @@ While this is a personal portfolio, I welcome suggestions and feedback! If you n
 
 ---
 
-*Built with ❤️ using React & Tailwind CSS*
+_Built with ❤️ using React & Tailwind CSS_
