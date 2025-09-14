@@ -19,6 +19,12 @@ export interface Skill {
   name: string;
   icon: string;
 }
+export interface Education {
+  institution: string;
+  degree: string;
+  period: string;
+  details?: string[];
+}
 
 export interface SkillCategory {
   title: string;

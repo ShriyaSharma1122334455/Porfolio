@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { Experience, Project, SkillCategory, Certification, Skill, Activity, OtherAccomplishment } from './types';
+import type { Experience, Project, SkillCategory, Certification, Skill, Activity, OtherAccomplishment, Education } from './types';
 
 // Updated Icon component to handle multiple children (e.g., paths)
 const Icon = ({ children, viewBox = "0 0 24 24", className = "h-10 w-10" }: { children: React.ReactNode, viewBox?: string, className?: string }) => (
@@ -23,12 +23,11 @@ const SKILL_ICONS: { [key: string]: string } = {
     SQL: "/assets/icons/SQL.png",
     ReactJS: "/assets/icons/React.png",
     NodeJS  : "/assets/icons/Node.png",
-    MongoDB: React.createElement(Icon, { viewBox: "0 0 24 24", children: React.createElement('path', { d: "M14,14.5C14,12.23 12.5,11.43 12,11.25C11.5,11.43 10,12.23 10,14.5C10,16.04 10.95,17.14 12,17.5C13.05,17.14 14,16.04 14,14.5M12,2C12.19,2 12.38,2.04 12.56,2.09C15.2,2.65 17.05,4.72 17.65,7.35C18.25,9.98 17.2,12.4 15.1,14.15C14.07,15.1 13.06,16.22 13.06,17.75L13,18H11V17.75C11,16.22 9.93,15.1 8.9,14.15C6.8,12.4 5.75,9.98 6.35,7.35C6.95,4.72 8.8,2.65 11.44,2.09C11.62,2.04 11.81,2 12,2M12,4A2,2 0 0,0 10,6A2,2 0 0,0 12,8A2,2 0 0,0 14,6A2,2 0 0,0 12,4Z" }) }),
+    MongoDB: "/assets/icons/mongodb.png",
     Docker: "/assets/icons/docker.png",
     AWS: "/assets/icons/aws.png",
     Figma: "/assets/icons/figma.png",
     GitHub: "/assets/icons/github.png",
-    Nextjs: "/assets/icons/nextjs.png",
     Java: "/assets/icons/java.png",
     Generic: "/assets/icons/generic.png",
     Express: "/assets/icons/express.png",
@@ -39,6 +38,7 @@ const SKILL_ICONS: { [key: string]: string } = {
     Agile: "/assets/icons/agile.png",
     CICD: "/assets/icons/cicd.webp",
     PMP: "/assets/icons/pmp.png",
+    Nextjs: "/assets/icons/next.png",
 };
 
 export const PROFILE_DATA = {
@@ -53,6 +53,20 @@ export const PROFILE_DATA = {
 export const ABOUT_DATA = {
     summary: "A passionate and driven Computer Science graduate student with a strong foundation in software development, data analytics, and machine learning. My journey from Information Technology to Computer Science has equipped me with a versatile skill set, and I am dedicated to applying my knowledge to create impactful, data-driven applications. I thrive in collaborative environments and am always eager to tackle new challenges and learn emerging technologies.",
 };
+export const EDUCATION_DATA: Education[] = [
+    {
+        institution: "New Jersey Institute of Technology",
+        degree: "Master of Science in Computer Science",
+        period: "Jan 2025 - May 2026",
+        details: ["Relevant Coursework: Data Structures & Algorithms, Cloud Computing, Database Management, Machine Learning, Artificial Intelligence, Web Development and API Development, Software Design & Product Methodology, Java, Internet & Higher Layer Protocols", "GPA:3.5/4.0"]
+    },
+    {
+        institution: "University of Mumbai",
+        degree: "Bachelor of Engineering in Information Technology",
+        period: "Aug 2018 - June 2022",
+        details: ["Relevant Coursework: Operating Systems, hardware systems, software development, computer networks, database management, cloud computing, and the software development lifecycle (SDLC). Gained exposure to algorithms, data structures, operating systems, and emerging technologies, building a well-rounded understanding of both theoretical concepts and practical applications in IT.", "GPA: 3.5/4.0"]
+    }
+];
 
 export const EXPERIENCE_DATA: Experience[] = [
     {
