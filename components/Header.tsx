@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SocialLinks from "./SocialLinks";
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
   href,
@@ -6,7 +7,7 @@ const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({
 }) => (
   <a
     href={href}
-    className="text-slate-300 hover:text-emerald-400 transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium"
+    className="text-slate-300 hover:text-emerald-400 transition-colors duration-300 px-3 py-2 rounded-md text-md font-medium "
   >
     {children}
   </a>
@@ -26,12 +27,13 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { href: "#about", label: "About" },
-    { href: "#experience", label: "Experience" },
-
     { href: "#projects", label: "Projects" },
     { href: "#skills", label: "Skills" },
+    { href: "#experience", label: "Experience" },
+    { href: "#education", label: "Education" },
     { href: "#certifications", label: "Certifications" },
-    { href: "#extracurricular", label: "Extra curriculars" },
+    { href: "#extracurricular", label: "Leadership & Achievements" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -50,12 +52,8 @@ const Header: React.FC = () => {
                 {link.label}
               </NavLink>
             ))}
-            <a
-              href="#contact"
-              className="ml-4 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105"
-            >
-              Contact Me
-            </a>
+
+            {/* <SocialLinks /> */}
           </div>
           <div className="md:hidden">
             <button

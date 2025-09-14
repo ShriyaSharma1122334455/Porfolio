@@ -1,6 +1,14 @@
 import React from "react";
 import { PROFILE_DATA } from "../constants";
 
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = "/Shriya_Sharma.pdf"; // path from public folder
+  link.download = "Shriya_Sharma.pdf"; // desired filename
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 const Hero: React.FC = () => {
   return (
     <section
@@ -23,7 +31,7 @@ const Hero: React.FC = () => {
     }
     `}
       </style>
-      <div className="z-10 w-full max-w-4xl animate-float  ">
+      <div className="z-10 w-full max-w-4xl animate-float   ">
         <div className="bg-slate-800/50 backdrop-blur-sm p-8 md:p-12 rounded-xl shadow-2xl space-y-6">
           <h1
             className="text-4xl sm:text-6xl md:text-7xl font-black text-slate-100 tracking-tight opacity-0 animate-fadeInUp"
@@ -53,13 +61,12 @@ const Hero: React.FC = () => {
             >
               View Projects
             </a>
-            <a
-              href="/resume.pdf"
-              download="Shriya_Sharma_Resume.pdf"
+            <button
+              onClick={downloadResume}
               className="w-full sm:w-auto bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Download Resume
-            </a>
+            </button>
           </div>
         </div>
       </div>

@@ -10,6 +10,7 @@ import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import SocialLinks from "./components/SocialLinks";
 
 const App: React.FC = () => {
   return (
@@ -18,13 +19,16 @@ const App: React.FC = () => {
       <main className="container mx-auto px-4 sm:px-6 md:px-12">
         <Hero />
         <About />
-        <Experience />
         <Projects />
-        <Education />
         <Skills />
+        <Experience />
+        <Education />
         <Certifications />
         <Extracurricular />
         <Contact />
+        <div className="fixed right-10 top-3/4 z-50">
+          <SocialLinks vertical />
+        </div>
       </main>
       <Footer />
     </div>

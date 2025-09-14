@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionWrapper from "./SectionWrapper";
 import { PROFILE_DATA } from "../constants";
+import SocialLinks from "./SocialLinks";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -32,40 +33,6 @@ const Contact: React.FC = () => {
         </p>
 
         <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-8 shadow-lg">
-          {/* <form onSubmit={handleSubmit} className="space-y-6">
-                        <div className="flex flex-col md:flex-row gap-6">
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Your Name"
-                                value={formData.name}
-                                onChange={handleChange}
-                                required
-                                className="w-full bg-slate-700 border border-slate-600 text-white rounded-md p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Your Email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                required
-                                className="w-full bg-slate-700 border border-slate-600 text-white rounded-md p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
-                            />
-                        </div>
-                        <textarea
-                            name="message"
-                            placeholder="Your Message"
-                            rows={5}
-                            value={formData.message}
-                            onChange={handleChange}
-                            required
-                            className="w-full bg-slate-700 border border-slate-600 text-white rounded-md p-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all"
-                        ></textarea>
-                        <button type="submit" className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg w-full md:w-auto">
-                            Send Message
-                        </button>
-                    </form> */}
           <p className="text-slate-400">You can reach me directly at:</p>
           <a
             href={`mailto:${PROFILE_DATA.email}`}
@@ -75,7 +42,7 @@ const Contact: React.FC = () => {
           </a>
         </div>
 
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <p className="text-slate-400 mb-4">Or connect with me on:</p>
           <div className="flex justify-center space-x-6">
             <a
@@ -123,6 +90,11 @@ const Contact: React.FC = () => {
               </svg>
             </a>
           </div>
+        </div>
+         */}
+        <div className="mt-12">
+          <p className="text-slate-400 mb-4">Or connect with me on:</p>
+          <SocialLinks />
         </div>
       </div>
     </SectionWrapper>
