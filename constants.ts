@@ -46,8 +46,8 @@ export const PROFILE_DATA = {
     title: "Software Engineer | Machine Learning Enthusiast",
     tagline: "Building innovative solutions with a blend of data intelligence and robust development.",
     email: "shriyasharma2152@hotmail.com",
-    linkedin: "https://www.linkedin.com/in/shriya-sharma-example", // Placeholder
-    github: "https://github.com/shriya-sharma-example", // Placeholder
+    linkedin: "https://www.linkedin.com/in/shriyasharmacs26/",
+    github: "https://github.com/ShriyaSharma1122334455", 
 };
 
 export const ABOUT_DATA = {
