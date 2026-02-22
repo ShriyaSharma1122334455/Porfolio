@@ -43,12 +43,18 @@ const SKILL_ICONS: { [key: string]: string } = {
 
 export const PROFILE_DATA = {
     name: "Shriya Sharma",
-    title: "Software Engineer | Machine Learning Enthusiast",
+    title: "Software Engineer | Full Stack Developer | Data Enthusiast",
     tagline: "Building innovative solutions with a blend of data intelligence and robust development.",
     email: "shriyasharma2152@hotmail.com",
     linkedin: "https://www.linkedin.com/in/shriyasharmacs26/",
     github: "https://github.com/ShriyaSharma1122334455", 
 };
+// export const CERTIFICATIONS_DATA: Certification[] = [
+//     {
+//         name: "AWS Cloud Practitioner"
+//     }
+
+// ];
 
 export const ABOUT_DATA = {
     summary: "A passionate and driven Computer Science graduate student with a strong foundation in software development, data analytics, and machine learning. My journey from Information Technology to Computer Science has equipped me with a versatile skill set, and I am dedicated to applying my knowledge to create impactful, data-driven applications. I thrive in collaborative environments and am always eager to tackle new challenges and learn emerging technologies.",
